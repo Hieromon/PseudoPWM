@@ -1,6 +1,6 @@
 language: c
 env:
-  - BD=esp8266:esp8266:nodemcuv2:CpuFrequency=80,FlashSize=4M3M
+  - BD=esp8266:esp8266:generic:CpuFrequency=80,FlashSize=4M3M
 before_install:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
@@ -10,15 +10,11 @@ before_install:
   - sudo mv arduino-1.8.5 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
-  - ln -s $PWD /usr/local/share/arduino/libraries/
+  - ln -s $PWD /usr/local/share/arduino/libraries/PseudoPWM
   - arduino --pref "boardsmanager.additional.urls=http://arduino.esp8266.com/stable/package_esp8266com_index.json" --save-prefs
   - arduino --install-boards esp8266:esp8266
   - arduino --board $BD --save-prefs
   - arduino --pref "compiler.warning_level=all" --save-prefs
-  
-  # install lib
-  - git clone https://github.com/Hieromon/PseudoPWM /usr/local/share/arduino/libraries/PseudoPWM
-  
 script:
 - arduino --verify --board $BD $PWD/expamples/blink/blink.ino
 - arduino --verify --board $BD $PWD/expamples/dutychange/dutychange.ino
