@@ -1,6 +1,7 @@
 # PseudoPWM for Arduino
-
 *Output pseudo PWM wave.*
+
+[![Build Status](https://travis-ci.org/Hieromon/PseudoPWM.svg?branch=master)](https://travis-ci.org/Hieromon/PseudoPWM)
 
 It generates a relatively long cycle pseudo PWM as milliseconds and output to the port.
 
