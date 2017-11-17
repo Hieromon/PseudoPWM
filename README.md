@@ -1,5 +1,5 @@
 # PseudoPWM for Arduino
-*Output pseudo PWM wave.*
+*Output pseudo PWM wave to arduino digital port.*
 
 [![Build Status](https://travis-ci.org/Hieromon/PseudoPWM.svg?branch=master)](https://travis-ci.org/Hieromon/PseudoPWM)
 
