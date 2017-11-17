@@ -16,9 +16,9 @@ install:
   - arduino --board $BD --save-prefs
   - arduino --pref "compiler.warning_level=all" --save-prefs
 script:
- - arduino --verify --board $BD $PWD/expamples/blink/blink.ino
- - arduino --verify --board $BD $PWD/expamples/dutychange/dutychange.ino
- - arduino --verify --board $BD $PWD/expamples/pwmout/pwmout.ino
+ - arduino --verify --board $BD $PWD/examples/blink/blink.ino
+ - arduino --verify --board $BD $PWD/examples/dutychange/dutychange.ino
+ - arduino --verify --board $BD $PWD/examples/pwmout/pwmout.ino
 
 notifications:
   email:
