@@ -133,5 +133,5 @@ Disable callback.
 
 License
 -----------
-The PseudoPWM class is licensed under the [MIT License](LICENCE.md).  
+The PseudoPWM class is licensed under the [MIT License](LICENSE.md).  
 Copyright &copy; 2017 hieromon@gmail.com
