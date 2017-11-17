@@ -15,15 +15,10 @@ install:
   - arduino --board esp8266:esp8266:generic --save-prefs
   - arduino --pref "compiler.warning_level=all" --save-prefs
 script:
-  - "echo $PWD"
-  - "echo $HOME"
-  - "ls $PWD"
-  - source $TRAVIS_BUILD_DIR/travis/common.sh
-  - build_examples
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - arduino --verify --board esp8266:esp8266:generic $PWD/examples/blink/blink.ino
+  - arduino --verify --board esp8266:esp8266:generic $PWD/examples/dutychange/dutychange.ino
+  - arduino --verify --board esp8266:esp8266:generic $PWD/examples/pwmout/pwmout.ino
 notifications:
   email:
     on_success: change
     on_failure: change
-    
