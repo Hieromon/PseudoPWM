@@ -23,7 +23,9 @@ Download this file as a zip, and extract the resulting folder into your Arduino 
 See ![Installing Additional Arduino Libraries](https://www.arduino.cc/en/Guide/Libraries).
 
 ## Example
+
 - Simple
+
 ```c++
 // This sketch blinks simply the onboard LED of ESP8266.
 
@@ -42,6 +44,7 @@ void loop() {
 ```
 
 - Change duty rate dynamically
+
 ```c++
 // This sketch flashes the onboard LED of ESP8266.
 // Also it is blinked 0.2 seconds for one second every 8 seconds.
