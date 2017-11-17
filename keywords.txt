@@ -1,0 +1,12 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+PseudoPWM	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+attach	KEYWORD2
+detach	KEYWORD2
+Start	KEYWORD2
+Stop	KEYWORD2
