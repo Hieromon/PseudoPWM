@@ -1,0 +1,13 @@
+{
+  "name": "PseudoPWM",
+  "keywords": "pwm, timer, ticker",
+  "description": "A wrapper for generating the relatively long cycle pseudo PWM as milliseconds and output.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Hieromon/PseudoPWM.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif8266*",
+  "version": "1.0"
+}
