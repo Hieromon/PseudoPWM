@@ -1,2 +1,5 @@
+# Manually classify the file types
+*.ino linguist-language=Arduino
+
 # Auto detect text files and perform LF normalization
 * text=auto
